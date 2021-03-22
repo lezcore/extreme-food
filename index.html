@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Extreme Food</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">El Atracón</a>
+        <ul class="navigation">
+            <li><a href="#banner">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Extreme Food</h2>
+            <p>Ven y prueba nuestros deliciosos sandwich de chancho, pollo, res y mucho más; acompáñalo con una jugosa bebida.</p>
+            <a href="#" class="button">Nuestro Menú</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>S</span>obre Nosotros</h2>
+                <p>Somos una empresa seria; distribuidora de sandwiches y bebidas, atendemos pedidos de empresas públicas y privadas.
+                    Fuimos premiados por nuestro excelente servicio por ("") con el premio ("").
+                    Estamos ubicados en: Jr. Loreto esquina Manuel Prado debajo del gimansio Olimpos (frente a electro Puno).
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="https://scontent.faqp2-3.fna.fbcdn.net/v/t31.0-8/27368689_320811185095164_3174759909327567004_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=e3f864&_nc_eui2=AeGxPTSrm0JIfRaE7FQ0bYc5zHwdxmxzkIrMfB3GbHOQiop2AcWlRpchXY9tDf5cWpdftX8SF6lLl4mAOjAn-wDA&_nc_ohc=GHCcCLgvGF0AX_alsbC&_nc_ht=scontent.faqp2-3.fna&oh=d512ef2625ff4c934c654c30b9f2202a&oe=607FFA77" alt="nosotros">
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">Nuestro <span>M</span>enú</h2>
+            <p>Tenemos una gran variedad de sandwiches y platos, además de las bebidas frías y calientes como gaseosas, jugos, café, té y mucho más. Preparados cuidadosamente y con todo el cariño del mundo para nuestra clientela.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="sandwiches.jpg" alt="sandwiches">
+                </div>
+                <div class="text">
+                    <h3>Sandwiches</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="" alt="platos">
+                </div>
+                <div class="text">
+                    <h3>Platos</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="jugos.jpg" alt="jugos">
+                </div>
+                <div class="text">
+                    <h3>Jugos y gaseosas</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="cafes.jpg" alt="cafes">
+                </div>
+                <div class="text">
+                    <h3>Café y té</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
